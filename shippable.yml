@@ -21,7 +21,7 @@ env:
 
 # Install necessary dependencies
 before_install:
-  - sudo service postgresql stop
+#  - sudo service postgresql stop
   - sudo service mysql stop
   - sudo apt-get update
   - sudo apt-get remove postgresql-common -y --purge
