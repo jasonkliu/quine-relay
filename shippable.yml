@@ -21,8 +21,8 @@ env:
 
 # Install necessary dependencies
 before_install:
-  - service postgresql stop
-  - service mysql stop
+  #- service postgresql stop
+  #- service mysql stop
   - apt-get update
   - apt-get remove postgresql-common -y --purge
   - apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
