@@ -25,7 +25,7 @@ before_install:
   #- service mysql stop
   - apt-get update
   - apt-get remove postgresql-common -y --purge
-  - apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
+  #- apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
     dist-upgrade
   - add-apt-repository ppa:ecere-team/ppa -y
   - add-apt-repository ppa:directhex/ppa -y
